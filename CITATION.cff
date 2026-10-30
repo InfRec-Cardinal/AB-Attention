@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use AB-Attention in your research, please cite the paper."
+title: "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers"
+type: software
+license: MIT
+repository-code: "https://github.com/InfRec-Cardinal/AB-Attention"
+url: "https://arxiv.org/abs/2610.39663"
+identifiers:
+  - type: other
+    value: "arXiv:2610.39663"
+    description: "arXiv preprint"
+authors:
+  - given-names: Bin
+    family-names: Xu
+  - given-names: Mo
+    family-names: Zhang
+  - given-names: Zhengfeiyang
+    family-names: Zhang
+  - given-names: Xinfeng
+    family-names: Yang
+  - given-names: Yixing
+    family-names: Ma
+  - given-names: Wei
+    family-names: Wang
+  - given-names: HeXin
+    family-names: Wang
+  - given-names: Pengfei
+    family-names: Zhou
+  - given-names: Wangbo
+    family-names: Zhao
