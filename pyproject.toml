@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel", "torch>=2.6", "ninja"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ab-attention"
+version = "0.1.0"
+description = "Accurate Block Attention for accelerating video diffusion transformers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "csrc/flashinfer/LICENSE"]
+dependencies = ["torch>=2.6", "flashinfer-python==0.6.12"]
+
+[project.urls]
+Repository = "https://github.com/InfRec-Cardinal/AB-Attention"
+Issues = "https://github.com/InfRec-Cardinal/AB-Attention/issues"
+Paper = "https://arxiv.org/abs/2610.39663"
+
+[project.optional-dependencies]
+video = [
+    "torch==2.6.0", "torchvision==0.21.0",
+    "diffusers==0.34.0", "transformers==4.50.0",
+    "accelerate==1.7.0", "sentencepiece", "ftfy", "imageio[ffmpeg]", "einops",
+    "cuvs-cu12==26.2.0",
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["ab_attention*"]
+namespaces = false

@@ -1,0 +1,3 @@
+include LICENSE generate.py csrc/flashinfer/LICENSE
+recursive-include csrc *.cu *.cpp *.h *.cuh
+prune tests
